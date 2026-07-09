@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domain Alert Email Generator · Dorik</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div class="mark">Dorik</div>
+      <h1>Domain alert email</h1>
+      <p class="lede">Fill in the customer's details. The email and subject line build themselves as you type.</p>
+    </header>
+
+    <div class="grid">
+      <!-- Input side -->
+      <section class="pane" aria-label="Details">
+        <form id="form" novalidate>
+          <div class="field">
+            <label for="plan">Plan name</label>
+            <input type="text" id="plan" value="Personal Monthly" autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <label for="cancel">Cancellation date</label>
+            <input type="text" id="cancel" value="Jun 8, 2026" autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <label for="domain">Connected domain</label>
+            <input type="text" id="domain" value="bridgechart.com" autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <label for="deadline">Removal deadline</label>
+            <input type="text" id="deadline" readonly />
+            <p class="hint">Set automatically to 7 days from today. Edit if you need a different date.</p>
+            <button type="button" class="link-btn" id="editDeadline">Edit manually</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Output side -->
+      <section class="pane output" aria-label="Generated email">
+        <div class="block">
+          <div class="block-head">
+            <span class="block-label">Subject</span>
+            <button type="button" class="copy" data-target="subjectOut">Copy</button>
+          </div>
+          <div class="subject" id="subjectOut"></div>
+        </div>
+
+        <div class="block">
+          <div class="block-head">
+            <span class="block-label">Email body</span>
+            <button type="button" class="copy" data-target="bodyOut">Copy</button>
+          </div>
+          <div class="body" id="bodyOut"></div>
+        </div>
+
+        <button type="button" class="copy-all" id="copyAll">Copy full email</button>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
