@@ -29,16 +29,19 @@ function buildBody(plan, cancelDate, domain, deadline) {
 
 We hope you're doing well.
 
-We noticed that your ${plan} subscription was cancelled on ${cancelDate}. However, your custom domain ${domain} is still connected to your website.
+We noticed that your <b>${plan}<b/> subscription was cancelled on <b>${cancelDate}</b>.
+However, your custom domain ${domain} is still connected to your website.
 
-Please note that custom domain connection is a premium feature available only with an active paid subscription.
+Please note that the custom domain connection is a premium feature available only with an active paid subscription.
 
-To continue using ${domain}, please resubscribe to a paid plan by ${deadline}. After this period, we will remove the custom domain connection from our end.
+To continue using ${domain}, please resubscribe to a paid plan by <b>${deadline}</b>. 
+After this period, we will remove the custom domain connection from our end.
 
-If you have any questions or need assistance with resubscribing or disconnecting your domain, feel free to reply to this email. We'll be happy to help.
+If you have any questions or need assistance with resubscribing or disconnecting your domain, please feel free to reply to this email.
+We'll be happy to help.
 
 Best regards,
-The Dorik Team`;
+The Dorik Support Team`;
 }
 
 // --- Render (live) ---
