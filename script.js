@@ -29,7 +29,7 @@ function buildBody(plan, cancelDate, domain, deadline) {
 
 We hope you're doing well.
 
-We noticed that your <b>${plan}<b/> subscription was cancelled on <b>${cancelDate}</b>.
+We noticed that your <strong>${plan}</strong> subscription was cancelled on ${cancelDate}.
 However, your custom domain ${domain} is still connected to your website.
 
 Please note that the custom domain connection is a premium feature available only with an active paid subscription.
