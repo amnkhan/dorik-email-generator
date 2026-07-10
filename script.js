@@ -31,12 +31,9 @@ We hope you're doing well.
 
 We noticed that your <strong>${plan}</strong> subscription was cancelled on <strong>${cancelDate}</strong>.
 However, your custom domain ${domain} is still connected to your website.
-
 Please note that the custom domain connection is a premium feature available only with an active paid subscription.
-
 To continue using ${domain}, please resubscribe to a paid plan by <strong>${deadline}</strong>. 
 After this period, we will remove the custom domain connection from our end.
-
 If you have any questions or need assistance with resubscribing or disconnecting your domain, please feel free to reply to this email.
 We'll be happy to help.
 
